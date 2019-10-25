@@ -31,7 +31,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "__ed160c80-fb52-400a-9db1-4a12c687d6b5__",
+      "applicationExtensionKey": "ed160c80-fb52-400a-9db1-4a12c687d6b5",
       "save": {
         "url": "https://secondcustomactivity.herokuapp.com/journeybuilder/save",
           "verb": "POST",
