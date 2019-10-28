@@ -28,3 +28,19 @@ exports.login = function( req, res ) {
 exports.logout = function( req, res ) {
     req.session.token = '';
 };
+
+// Write logs for debugging
+function Log(message) {
+
+    var currentdate = new Date();
+    var datetime = (currentdate.getMonth() + 1) + "/"
+        + currentdate.getDate() + "/"
+        + currentdate.getFullYear() + " @ "
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":"
+        + currentdate.getSeconds() + "."
+        + currentdate.getMilliseconds();
+
+    var logMessage = "[" + datetime + "] " + message;    
+    console.log(logMessage);
+}
