@@ -17,6 +17,9 @@ define([
     connection.on('clickedNext', save);
    
     function onRender() {
+        
+        Log("customActivity.onRender() called");
+        
         // JB will respond the first time 'ready' is called with 'initActivity'
         connection.trigger('ready');
 
