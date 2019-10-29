@@ -106,7 +106,7 @@ exports.execute = function (req, res) {
 function CallMIDHealthCheck()
 {
     var settings = {
-        "async": true,
+        "async": false,
         "crossDomain": true,
         "url": "https://mgupta.free.beeceptor.com/HelloWorld",
         "method": "GET",
