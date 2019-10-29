@@ -74,7 +74,7 @@ exports.save = function (req, res) {
 exports.execute = function (req, res) {
 
     // Call External GET API
-    // CallMIDHealthCheck();
+    CallMIDHealthCheck();
     return res.status(200).end();
     
     /*
