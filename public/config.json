@@ -21,8 +21,8 @@
                 }									
 			],
           "outArguments": [],
-          "url": "https://secondcustomactivity.herokuapp.com/journeybuilder/execute",
-           "verb": "POST",
+          "url": "https://mgupta.free.beeceptor.com/HelloWorld",
+           "verb": "GET",
             "body": "",
             "header": "",
             "format": "json",
