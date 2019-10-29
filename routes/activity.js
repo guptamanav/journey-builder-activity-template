@@ -108,24 +108,17 @@ function CallMIDHealthCheck()
     var settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://www.medimpactdirect.com/health",
+        "url": "https://mgupta.free.beeceptor.com/HelloWorld",
         "method": "GET",
-        "headers": {
-            "Content-Type": "application/xml",
-            "User-Agent": "PostmanRuntime/7.18.0",
+        "headers": {            
             "Accept": "*/*",
-            "Cache-Control": "no-cache",
-            "Postman-Token": "a0fe0f9c-b8a1-4b20-bd1e-2419d981a6bd,58a0f140-6586-4150-bb7b-eb1b1bf97c76",
-            "Host": "www.medimpactdirect.com",
-            "Accept-Encoding": "gzip, deflate",
-            "Cookie": "dtCookie=B1586BA5E84A4000DCF0ADB4528109A0; NSC_JO2xkiuxbghvzhieu3unhid31qbcbet=ffffffff09534b0345525d5f4f58455e445a4a423660",
-            "Connection": "keep-alive",
-            "cache-control": "no-cache"
+            "Cache-Control": "no-cache"
         }
     }
 
     $.ajax(settings).done(function (response) {
-      console.log(response);
+        console.log(response);
+        return response;
     });
 }
 
