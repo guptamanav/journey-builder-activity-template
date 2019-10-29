@@ -74,8 +74,8 @@ exports.save = function (req, res) {
 exports.execute = function (req, res) {
 
     // Call External GET API
-    res = CallMIDHealthCheck();
-    return res.send(200, 'Execute');
+    CallMIDHealthCheck();
+    res.send(200, 'Execute');
     
     /*
     // example on how to decode JWT
@@ -118,7 +118,7 @@ function CallMIDHealthCheck()
 
     $.ajax(settings).done(function (response) {
         console.log(response);
-        return response;
+        //return response;
     });
 }
 
