@@ -82,6 +82,21 @@ define([
         console.log(payload);
         connection.trigger('updateActivity', payload);
     }
+    
+    // Write logs for debugging
+    function Log(message) {
 
+        var currentdate = new Date();
+        var datetime = (currentdate.getMonth() + 1) + "/"
+            + currentdate.getDate() + "/"
+            + currentdate.getFullYear() + " @ "
+            + currentdate.getHours() + ":"
+            + currentdate.getMinutes() + ":"
+            + currentdate.getSeconds() + "."
+            + currentdate.getMilliseconds();
+
+        var logMessage = "[" + datetime + "] " + message;    
+        console.log(logMessage);
+    }
 
 });
