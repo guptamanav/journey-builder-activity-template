@@ -29,9 +29,13 @@ define([
     }
 
     function initialize(data) {
+        
+        Log("customActivity.initialize() called");
+        
         console.log(data);
         if (data) {
             payload = data;
+            Log("payload: " + payload);
         }
         
         var hasInArguments = Boolean(
@@ -47,8 +51,7 @@ define([
 
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
-                
-              
+                Log("inArgument - Key: " + key + " Value: " + val);              
             });
         });
 
@@ -60,11 +63,13 @@ define([
     }
 
     function onGetTokens(tokens) {
+        Log("customActivity.onGetTokens() called. tokens: " + tokens);
         console.log(tokens);
         authTokens = tokens;
     }
 
     function onGetEndpoints(endpoints) {
+        Log("customActivity.onGetEndpoints() called. endpoints: " + endpoints);
         console.log(endpoints);
     }
 
