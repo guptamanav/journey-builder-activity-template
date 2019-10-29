@@ -9,20 +9,16 @@
     "lang": {
         "en-US": {
             "name": "SecondCustomActivity",
-          "description": "Hits GET request.",
+          "description": "Hits TEST GET API.",
           "step1Label": "Configure Activity"
         }
     },
     "arguments": {
         "execute": {
-           "inArguments":[
-				{
-                    "emailAddress": "{{Contact.Attribute.CustomActivity.EmailAddress}}"
-                }									
-			],
+          "inArguments":[],
           "outArguments": [],
-          "url": "https://mgupta.free.beeceptor.com/HelloWorld",
-           "verb": "GET",
+          "url": "https://secondcustomactivity.herokuapp.com/journeybuilder/execute",
+           "verb": "POST",
             "body": "",
             "header": "",
             "format": "json",
